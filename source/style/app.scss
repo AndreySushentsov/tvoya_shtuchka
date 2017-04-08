@@ -1,0 +1,36 @@
+// переменные
+$color_footer: #232323; // цвет цвет футера
+$color_text: #E1E0E3; // цвет текста
+$color_text2:#939393;
+$color_page_about_3: #474b57; // цвет текста
+$color_background: #EDEDED; // цвет фона
+
+// GENERAL
+body,h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Play', sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+li{
+  list-style-type: none;
+}
+
+.wrapper{
+  flex:1;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+
+// Подключаем примеси и остальные стили
+@import 'mixins/mixins';
+@import 'common/_navigation';
