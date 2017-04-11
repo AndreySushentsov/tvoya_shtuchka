@@ -1,0 +1,19 @@
+.c-sidebar{
+  position: fixed;
+  height: 100vh;
+  padding:10px;
+  text-align: center;
+  background: green;
+  z-index: 10;
+  @include mobile{
+    display: none;
+  };
+}
+.c-sidebar__menu{
+  transition: 0.4s;
+  &:hover{
+    cursor: pointer;
+    color: #fff;
+    margin-right: 6px;
+  }
+}

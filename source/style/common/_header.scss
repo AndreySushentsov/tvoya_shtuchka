@@ -1,0 +1,26 @@
+header{
+  height: 500px;
+  width: 100%;
+  background: #C8C8C8;
+}
+.header__nav{
+  height: 100px;
+  background: linear-gradient(rgba(218,149,188,1), rgba(0,0,0,0));
+  position: relative;
+}
+.nav__list{
+  @include centred(y);
+  right: 0;
+  margin-right: 5%;
+}
+.nav__item{
+  display: inline-block;
+  margin: 0 10px;
+}
+.nav__link{
+  color: $color_text2;
+  transition: color 0.4s;
+  &:hover{
+    color: #fff;
+  }
+}

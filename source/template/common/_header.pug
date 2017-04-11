@@ -1,0 +1,11 @@
+header
+  nav.header__nav
+    ul.nav__list
+      -var navigation_items = [{url:'index.html', menu:'Главная'},{url:'galery.html', menu:'Галерея'},{url:'goods.html', menu:'Товары для творчества'},{url:'contacts.html', menu:'Контакты'},{url:'info.html', menu:'Информация'}]
+      each item in navigation_items
+        li.nav__item
+          a(href=item.url).nav__link=item.menu
+    .nav__burger
+      .bar1
+      .bar2
+      .bar3

@@ -13,6 +13,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 body{
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Play', sans-serif;
@@ -22,15 +23,21 @@ body{
 li{
   list-style-type: none;
 }
+a{
+  display: block;
+  text-decoration: none;
+}
 
 .wrapper{
   flex:1;
-  min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 
 // Подключаем примеси и остальные стили
 @import 'mixins/mixins';
-@import 'common/_navigation';
+@import 'common/_header';
+@import 'common/_sidebar';
+@import 'common/main.section.content';
+@import 'common/_footer';
+@import 'common/main.section.img';

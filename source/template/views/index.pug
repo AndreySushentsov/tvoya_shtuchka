@@ -1,12 +1,12 @@
 include ../common/_template.pug
 
 body
-  nav
-    include ../common/_navigation.pug
+  include ../common/_header.pug
+  include ../common/_sidebar.pug
   .wrapper
-  
-  footer
-    include ../common/_footer.pug
+    include ../common/main.section.content.pug
+    include ../common/main.section.img.pug    
+  include ../common/_footer.pug
   script(src='./assets/js/foundation.js' defer)
   script(src='./assets/js/app.js' defer)
   <!--[if lt IE 9]>
