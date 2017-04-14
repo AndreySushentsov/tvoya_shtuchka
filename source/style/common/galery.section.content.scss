@@ -1,0 +1,66 @@
+.c-galery__content{
+  margin: 80px;
+  margin-right: 0;
+  @include mobile{
+    margin:20px 0;
+    text-align: center;
+  };
+}
+.c-card__container{
+  position: relative;
+  display: inline-block;
+  width: 31%;
+  margin:10px;
+  height: 200px;
+  transition: all 0.2s;
+  perspective: 1000;
+  cursor: pointer;
+
+  @include laptop{
+    width:45%;
+  };
+  @include mobile{
+    width: 80%;
+    margin: 10px;
+  };
+}
+.c-card__front,.c-card__back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #DDDED7;
+  box-shadow: -10px 10px 17px #CDCDCD;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.c-card__back{
+  transform: rotateY(-180deg);
+}
+.flipped .c-card__back{
+  transform: rotateY(0deg);
+}
+.flipped .c-card__front{
+  transform: rotateY(180deg);
+}
+.c-card__overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  color: $color_text;
+  text-align: center;
+  padding-top: 30%;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s;
+  &:hover{
+    opacity: 1;
+  }
+}
+.c-card__image{
+  height: 100%;
+}

@@ -1,8 +1,8 @@
 // переменные
 $color_footer: #232323; // цвет цвет футера
+$main_color: #DC214C; // основной цвет банера
 $color_text: #E1E0E3; // цвет текста
 $color_text2:#939393;
-$color_page_about_3: #474b57; // цвет текста
 $color_background: #EDEDED; // цвет фона
 
 // GENERAL
@@ -16,7 +16,7 @@ body{
   position: relative;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Play', sans-serif;
+  font-family: 'Merriweather', serif;
   letter-spacing: 2px;
   font-size: 18px;
 }
@@ -36,8 +36,11 @@ a{
 
 // Подключаем примеси и остальные стили
 @import 'mixins/mixins';
-@import 'common/_header';
+@import 'common/_navigation';
 @import 'common/_sidebar';
 @import 'common/main.section.content';
-@import 'common/_footer';
+@import 'common/main.section.header';
 @import 'common/main.section.img';
+@import 'common/galery.section.header';
+@import 'common/galery.section.content';
+@import 'common/_footer';
