@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+</html>
+<body>
+  <header>
+    <div class="l-header__container"></div>
+  </header>
+  <div class="wrapper">
+    <div class="form__container">
+      <form class="form" id="upload" action="/upload" method="POST" enctype="multipart/form-data">
+        <h2 class="form__subtitle">Загрузите картинку на сервер</h2>
+        <div class="status"></div>
+        <label class="form__input-line">
+          <input class="form__input" name="name" type="text" placeholder="Описание картинки" id="file-desc">
+        </label></br>
+        <label class="form__input-line">
+          <input class="form__input" name="photo" type="file" required accept="image/*" id="file-select">
+        </label>
+        <div class="form__btns">
+          <input class="form__btn-send" name="" type="submit" value="Отправить">
+          <input class="form__btn-reset" name="" type="reset" value="Очистить">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="./assets/js/foundation.js" defer></script>
+  <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</body>

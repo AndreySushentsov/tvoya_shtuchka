@@ -8,6 +8,3 @@
 })();
 
 //flipp card
-$('.c-card__container').click(function () {
-    $(this).toggleClass('flipped');
-});

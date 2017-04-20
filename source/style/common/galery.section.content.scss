@@ -1,6 +1,8 @@
 .c-galery__content{
-  margin: 80px;
+  padding: 80px;
   margin-right: 0;
+  background-color: #f7f7f7;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff3562' fill-opacity='0.42'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   @include mobile{
     margin:20px 0;
     text-align: center;
@@ -13,7 +15,6 @@
   margin:10px;
   height: 200px;
   transition: all 0.2s;
-  perspective: 1000;
   cursor: pointer;
 
   @include laptop{
@@ -24,7 +25,7 @@
     margin: 10px;
   };
 }
-.c-card__front,.c-card__back{
+.c-card__front{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,18 +34,7 @@
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
   transition: all 0.5s;
-}
-.c-card__back{
-  transform: rotateY(-180deg);
-}
-.flipped .c-card__back{
-  transform: rotateY(0deg);
-}
-.flipped .c-card__front{
-  transform: rotateY(180deg);
 }
 .c-card__overlay{
   width: 100%;
@@ -63,4 +53,27 @@
 }
 .c-card__image{
   height: 100%;
+}
+// modal window styles
+.c-modal__container{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.c-modal__image-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.c-modal__image{
+  height: 80%;
+  box-shadow: 0px 5px 25px #000;
+  @include centred();
+
 }
