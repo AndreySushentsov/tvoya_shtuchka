@@ -3,8 +3,11 @@
   each product in products
     .c-card__container
       .c-card__front 
-        .c-card__overlay Подробнee
+        .c-card__overlay Подробнe
         img(src=`./assets/img/img_${product}.JPG`).c-card__image
   .c-modal__container
+    .modal__burger
+      .m_bar1
+      .m_bar3
     .c-modal__image-wrapper
-      img(src='./assets/img/img_1.JPG').c-modal__image
+      img().c-modal__image

@@ -1,7 +1,9 @@
 .header__nav{
   height: 100px;
+  width: 100%;
+  z-index: 10;
   background: linear-gradient(rgba(218,149,188,1), rgba(0,0,0,0));
-  position: relative;
+  position: fixed;
 }
 .nav__list{
   @include centred(y);

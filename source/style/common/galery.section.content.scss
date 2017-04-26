@@ -1,8 +1,5 @@
 .c-galery__content{
-  padding: 80px;
-  margin-right: 0;
-  background-color: #f7f7f7;
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff3562' fill-opacity='0.42'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
   @include mobile{
     margin:20px 0;
     text-align: center;
@@ -30,11 +27,15 @@
   width: 100%;
   height: 100%;
   background-color: #DDDED7;
-  box-shadow: -10px 10px 17px #CDCDCD;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
-  transition: all 0.5s;
+  transition: 0.3s;
+  &:hover{
+    box-shadow: -10px 10px 17px #B9B9B8;
+    margin-left: -2px;
+    margin-top: -3px;
+  }
 }
 .c-card__overlay{
   width: 100%;
@@ -70,10 +71,40 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  animation: zoom 0.4s;
 }
 .c-modal__image{
   height: 80%;
   box-shadow: 0px 5px 25px #000;
   @include centred();
 
+}
+// modal image animation
+@keyframes zoom {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+// boorger
+.modal__burger{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3%;
+  z-index: 20;
+}
+.m_bar1,.m_bar3{
+  width: 25px;
+  height: 3px;
+  background-color: $color_text;
+  margin: 6px 0;
+}
+.m_bar1{
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+.m_bar3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }
