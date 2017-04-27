@@ -33,3 +33,26 @@ $('.modal__burger').on('click',function() {
   activeItem.removeClass('active');
   $('.c-modal__container').css({'display': 'none'});
 });
+
+
+// переключение между категориями
+$('.c-goods__menu-categories-item').on('click',function () {
+  var tabcontent = $('.c-goods__category-list'); // массив блоков с товарами
+  var tablinks = $('.c-goods__categories-item'); // список категорий
+  var id = $(this).attr('id');
+  var elem = document.getElementsByClassName(id)[0];// находим блок товаров с необходимым классом
+
+
+  // скрываем блоки с товарами и подсказку
+  $('.c-goods__prompt').css({'display':'none'});
+  for(i=0; i<tabcontent.length; i++){
+    $(tabcontent[i]).css({'display':'none'});
+  }
+  // удаляем класс active у списка категорий
+  for(i=0; i<tablinks.length; i++){
+    $(tablinks[i]).removeClass('active');
+  }
+
+  $(this).addClass('active');// добавляем класс active элементу на который кликнули
+  $(elem).css({'display':'block'}); // отображаем необходимый блок товаров
+});

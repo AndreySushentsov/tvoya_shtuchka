@@ -1,9 +1,14 @@
 .l-goods__wrapper
   .c-goods__menu-categories
-    ul
+    ul.c-goods__menu-categories-list
       each item in locals
-        li=item.category
-  .c-goods__list-goods
-    ul
-      each item in locals
-        li=item.items
+        li(id=`${item.id}`).c-goods__menu-categories-item
+          a(href='#')=item.category
+        
+  .c-goods__container
+    .c-goods__prompt Выберите категорию
+    each item in locals
+      div(class=`${item.id}`).c-goods__category-list
+        ul
+          each p in item.items
+           li=p
