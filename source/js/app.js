@@ -36,7 +36,9 @@ $('.modal__burger').on('click',function() {
 
 
 // переключение между категориями
-$('.c-goods__menu-categories-item').on('click',function () {
+$('.c-goods__menu-categories-item').on('click',function (e) {
+  e.preventDefault();// отменяем событие по умолчанию
+
   var tabcontent = $('.c-goods__category-list'); // массив блоков с товарами
   var tablinks = $('.c-goods__categories-item'); // список категорий
   var id = $(this).attr('id');
@@ -56,3 +58,17 @@ $('.c-goods__menu-categories-item').on('click',function () {
   $(this).addClass('active');// добавляем класс active элементу на который кликнули
   $(elem).css({'display':'block'}); // отображаем необходимый блок товаров
 });
+
+
+// добавляем карту
+function initMap() {
+   var uluru = {lat: 57.870487, lng: 59.9525402};
+   var map = new google.maps.Map(document.getElementById('map'), {
+     zoom: 17,
+     center: uluru
+   });
+   var marker = new google.maps.Marker({
+     position: uluru,
+     map: map
+   });
+};

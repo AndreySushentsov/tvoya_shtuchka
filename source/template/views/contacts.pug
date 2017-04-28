@@ -1,0 +1,16 @@
+include ../common/_template.pug
+
+body
+  header
+  include ../common/contacts.section.header.pug
+  .wrapper   
+    include ../common/contacts.section.content.pug
+  include ../common/contacts.section.map.pug
+  include ../common/_footer.pug
+  script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjtgcSchI-Rg_bA4PYvRFkJHq0OS-aVc&callback=initMap")
+  script(src='./assets/js/foundation.js' defer)
+  script(src='./assets/js/app.js' defer)
+  <!--[if lt IE 9]>
+  script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+  <![endif]-->
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
