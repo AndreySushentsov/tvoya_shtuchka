@@ -6,7 +6,15 @@
   }, 1000);
 
 })();
-
+// burger
+$('.nav__burger').click(function () {
+  $(this).toggleClass('change');
+  $('.overlay-nav__container').toggleClass('show');
+})
+$('.c-sidebar__menu').click(function () {
+  $(this).toggleClass('change');
+  $('.overlay-nav__container').toggleClass('show');
+})
 // modal image
 $('.c-card__container').on('click', function() {
   var items = '';

@@ -1,0 +1,6 @@
+-var navigation_items = [{url:'index.html', menu:'Главная'},{url:'galery.html', menu:'Галерея'},{url:'goods.html', menu:'Товары для творчества'},{url:'contacts.html', menu:'Контакты'},{url:'info.html', menu:'Информация'}]
+.overlay-nav__container
+  ul.overlay-nav__list
+    each item in navigation_items
+      li.overlay-nav__item
+        a(href=item.url).overlay-nav__link=item.menu

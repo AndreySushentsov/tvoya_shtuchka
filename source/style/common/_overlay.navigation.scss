@@ -1,0 +1,43 @@
+@keyframes overlay {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+//overlay menu
+.overlay-nav__container{
+  display: none;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 20;
+  background-color: rgba(139, 58, 53, 0.9);
+}
+.show{
+  width: 100%;
+  display: block;
+  animation: overlay 0.3s;
+}
+.overlay-nav__list{
+  @include centred;
+}
+.overlay-nav__item{
+  margin: 20px 0;
+  font-size: 2rem;
+}
+.overlay-nav__link{
+  display: block;
+  text-decoration: none;
+  color: $color_text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  &:hover{
+    color:$color_text2;
+  }
+}
