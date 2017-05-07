@@ -6,6 +6,7 @@
   }, 1000);
 
 })();
+
 // burger
 $('.nav__burger').click(function () {
   $(this).toggleClass('change');
@@ -48,23 +49,26 @@ $('.c-goods__menu-categories-item').on('click',function (e) {
   e.preventDefault();// отменяем событие по умолчанию
 
   var tabcontent = $('.c-goods__category-list'); // массив блоков с товарами
-  var tablinks = $('.c-goods__categories-item'); // список категорий
+  var tablinks = $('.c-goods__menu-categories-item'); // список категорий
   var id = $(this).attr('id');
   var elem = document.getElementsByClassName(id)[0];// находим блок товаров с необходимым классом
-
 
   // скрываем блоки с товарами и подсказку
   $('.c-goods__prompt').css({'display':'none'});
   for(i=0; i<tabcontent.length; i++){
     $(tabcontent[i]).css({'display':'none'});
   }
+  $('.c-goods__button').css({'display':'block'})
   // удаляем класс active у списка категорий
   for(i=0; i<tablinks.length; i++){
     $(tablinks[i]).removeClass('active');
+    $(tablinks[i]).children().css({'color':'#E1E0E3'})
   }
 
   $(this).addClass('active');// добавляем класс active элементу на который кликнули
+  $(this).children().css({'color':'#939393'});
   $(elem).css({'display':'block'}); // отображаем необходимый блок товаров
+
 });
 
 

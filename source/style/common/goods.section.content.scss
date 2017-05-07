@@ -4,11 +4,62 @@
   background: rgba(255,255,255, 0.8);
   display: flex;
   flex-direction: row;
+  @include laptop{
+    flex-direction: column;
+  };
 }
 .c-goods__menu-categories{
   width: 20%;
-  background: green;
+  background: #A03333;
+  @include laptop{
+    width: 100%;
+  };
 }
 .c-goods__category-list{
   display: none;
+}
+.c-goods__menu-categories-list{
+  text-align: center;
+}
+.c-goods__menu-categories-item{
+  font-size: 1.2rem;
+}
+
+.c-goods__menu-categories-link{
+  color: $color_text;
+  transition: 0.3s;
+  display: block;
+  padding: 15px 0;
+  &:hover{
+    color: $color_text2;
+    background: $color_background;
+  }
+}
+.active{
+  background: $color_background_active;
+  color: $color_text2;
+}
+.c-goods__container{
+  padding: 40px;
+  position: relative;
+}
+.c-goods__prompt{
+  color: $color_text2;
+}
+.c-goods__category-item{
+  color: $color_text2;
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+.c-goods__button{
+  background: $color_background;
+  padding: 10px ;
+  border-radius: 5px;
+  font-style: italic;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s;
+  &:hover{
+    background: #A03333;
+  }
 }

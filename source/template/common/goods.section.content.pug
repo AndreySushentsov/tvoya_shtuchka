@@ -3,12 +3,14 @@
     ul.c-goods__menu-categories-list
       each item in locals
         li(id=`${item.id}`).c-goods__menu-categories-item
-          a(href='#')=item.category
+          a(href='#').c-goods__menu-categories-link=item.category
         
   .c-goods__container
-    .c-goods__prompt Выберите категорию
+    h2.c-goods__prompt Выберите категорию
     each item in locals
       div(class=`${item.id}`).c-goods__category-list
-        ul
+        ul.c-goods__category
           each p in item.items
-           li=p
+           li.c-goods__category-item=p
+    button.c-goods__button
+      a(href='#') Узнать о наличии
