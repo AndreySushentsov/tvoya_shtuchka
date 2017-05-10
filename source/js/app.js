@@ -74,7 +74,7 @@ $('.c-goods__menu-categories-item').on('click',function (e) {
 
 // добавляем карту
 function initMap() {
-   var uluru = {lat: 57.870487, lng: 59.9525402};
+   var uluru = {lat: 57.870487, lng: 59.9510703};
    var map = new google.maps.Map(document.getElementById('map'), {
      zoom: 17,
      center: uluru
