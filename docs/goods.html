@@ -17,63 +17,294 @@
   </head>
 </html>
 <body>
-  <header></header>
-  <div class="c-goods__header">
-    <div class="header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__link" href="galery.html">Галерея</a></li>
-        <li class="nav__item"><a class="nav__link" href="goods.html">Товары для творчества</a></li>
-        <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-        <li class="nav__item"><a class="nav__link" href="info.html">Информация</a></li>
-      </ul>
-      <div class="nav__burger">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div class="overlay-nav__container">
-        <ul class="overlay-nav__list">
-          <li class="overlay-nav__item"><a class="overlay-nav__link" href="index.html">Главная</a></li>
-          <li class="overlay-nav__item"><a class="overlay-nav__link" href="galery.html">Галерея</a></li>
-          <li class="overlay-nav__item"><a class="overlay-nav__link" href="goods.html">Товары для творчества</a></li>
-          <li class="overlay-nav__item"><a class="overlay-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="overlay-nav__item"><a class="overlay-nav__link" href="info.html">Информация</a></li>
+  <header>
+    <div class="c-goods__header">
+      <div class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="galery.html">Галерея</a></li>
+          <li class="nav__item"><a class="nav__link" href="goods.html">Товары для творчества</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+          <li class="nav__item"><a class="nav__link" href="info.html">Информация</a></li>
         </ul>
+        <div class="nav__burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="overlay-nav__container">
+          <ul class="overlay-nav__list">
+            <li class="overlay-nav__item"><a class="overlay-nav__link" href="index.html">Главная</a></li>
+            <li class="overlay-nav__item"><a class="overlay-nav__link" href="galery.html">Галерея</a></li>
+            <li class="overlay-nav__item"><a class="overlay-nav__link" href="goods.html">Товары для творчества</a></li>
+            <li class="overlay-nav__item"><a class="overlay-nav__link" href="contacts.html">Контакты</a></li>
+            <li class="overlay-nav__item"><a class="overlay-nav__link" href="info.html">Информация</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
   <div class="wrapper">  
     <div class="l-goods__wrapper">
-      <div class="c-goods__menu-categories">
-        <ul class="c-goods__menu-categories-list">
-          <li class="c-goods__menu-categories-item" id="1"><a class="c-goods__menu-categories-link" href="#">Скрапукинг</a></li>
-          <li class="c-goods__menu-categories-item" id="2"><a class="c-goods__menu-categories-link" href="#">Декупаж</a></li>
-          <li class="c-goods__menu-categories-item" id="3"><a class="c-goods__menu-categories-link" href="#">Ленты, кружево</a></li>
-        </ul>
-      </div>
-      <div class="c-goods__container">
-        <h2 class="c-goods__prompt">Выберите категорию</h2>
-        <div class="1 c-goods__category-list">
-          <ul class="c-goods__category">
-            <li class="c-goods__category-item">Бумага, Кардоск</li>
-            <li class="c-goods__category-item">Чипборды, Вырубка</li>
-          </ul>
-        </div>
-        <div class="2 c-goods__category-list">
-          <ul class="c-goods__category">
-            <li class="c-goods__category-item">Декупажные салфетки</li>
-            <li class="c-goods__category-item">Заготовки из дерева</li>
-          </ul>
-        </div>
-        <div class="3 c-goods__category-list">
-          <ul class="c-goods__category">
-            <li class="c-goods__category-item">Ленты атласные</li>
-            <li class="c-goods__category-item">Ленты репсовые</li>
-          </ul>
-        </div>
-        <button class="c-goods__button"><a href="#">Узнать о наличии</a></button>
-      </div>
+      <ul class="c-goods-card__list">
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Скрапбукинг</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Бумага, Кардоск</li>
+                <li class="c-card-descr__item">Чипборды, Вырубка</li>
+                <li class="c-card-descr__item">Декоративные элементы</li>
+                <li class="c-card-descr__item">Трафареты, штампы</li>
+                <li class="c-card-descr__item">Дыроколы, фигурные ножницы</li>
+                <li class="c-card-descr__item">Брадсы, топсы</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Декупаж</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Декупажные салфетки</li>
+                <li class="c-card-descr__item">Заготовки из дерева, пенопласта</li>
+                <li class="c-card-descr__item">Лак, клей для декупажа, краска акриловые, контуры, глиттер</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Ленты, кружево, тесьма</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Ленты атласные</li>
+                <li class="c-card-descr__item">Ленты репсовые</li>
+                <li class="c-card-descr__item">Ленты атласные в горох, с рисунком</li>
+                <li class="c-card-descr__item">Ленты репсовые в горох, с рисунком</li>
+                <li class="c-card-descr__item">Ленты декоративные</li>
+                <li class="c-card-descr__item">Ленты органза</li>
+                <li class="c-card-descr__item">Ленты парча</li>
+                <li class="c-card-descr__item">Ленты х/б и джутовые</li>
+                <li class="c-card-descr__item">Кружево капрон, гапюр, х/б, стрейч</li>
+                <li class="c-card-descr__item">Тесьма вьюнчик, шанель и др.</li>
+                <li class="c-card-descr__item">Сутаж</li>
+                <li class="c-card-descr__item">Лента бархатная</li>
+                <li class="c-card-descr__item">Рюш</li>
+                <li class="c-card-descr__item">Бахрома</li>
+                <li class="c-card-descr__item">Косая бейка</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Бисероплетение</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Бисер Китай, Чехия</li>
+                <li class="c-card-descr__item">Проволока</li>
+                <li class="c-card-descr__item">Мононить, леска, нить стрейтч</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Фурнитура для бижутерии</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Подвески</li>
+                <li class="c-card-descr__item">Швензы</li>
+                <li class="c-card-descr__item">Цепочки</li>
+                <li class="c-card-descr__item">Основы для брошей, кулонов, колец, браслетов</li>
+                <li class="c-card-descr__item">Коннекторы, сеттинги</li>
+                <li class="c-card-descr__item">Пины, штифты</li>
+                <li class="c-card-descr__item">Шляпки для бусин, концевики</li>
+                <li class="c-card-descr__item">Бусины</li>
+                <li class="c-card-descr__item">Бусины Пандора</li>
+                <li class="c-card-descr__item">Замки</li>
+                <li class="c-card-descr__item">Нить вощеная, нить стрейч</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Флористика</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Цветы, листья, ягоды</li>
+                <li class="c-card-descr__item">Фоамиран</li>
+                <li class="c-card-descr__item">Молды, каттеры</li>
+                <li class="c-card-descr__item">Тейп-лента</li>
+                <li class="c-card-descr__item">Проволока герберная, флористическая</li>
+                <li class="c-card-descr__item">Тычинки</li>
+                <li class="c-card-descr__item">Корелиус</li>
+                <li class="c-card-descr__item">Сизаль</li>
+                <li class="c-card-descr__item">Гофрированная бумага</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Фелтинг</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Фетр</li>
+                <li class="c-card-descr__item">Шерсть для валяния</li>
+                <li class="c-card-descr__item">Иглы для валяния</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Вышивание</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Мулине</li>
+                <li class="c-card-descr__item">Пяльца</li>
+                <li class="c-card-descr__item">Канва</li>
+                <li class="c-card-descr__item">Набор для вышывания крестиком, бисером, лентами</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Канзаши</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Кабошоны, полубусины</li>
+                <li class="c-card-descr__item">Ленты атласные, репсовые, органза, парча</li>
+                <li class="c-card-descr__item">Ободки, резинки для волос, заколки</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Мыловарение</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Мыльная основа</li>
+                <li class="c-card-descr__item">Формы для мыла</li>
+                <li class="c-card-descr__item">Пигменты масла</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Квиллинг</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Бумажные полоски для квиллинга</li>
+                <li class="c-card-descr__item">Инструменты для квиллинга</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Художественные материалы</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Картон грунтованный</li>
+                <li class="c-card-descr__item">Краски акриловые</li>
+                <li class="c-card-descr__item">Контуры</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Фурнитура для игрушек</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Глазки, носики, реснички</li>
+                <li class="c-card-descr__item">Волосы для кукол</li>
+                <li class="c-card-descr__item">Наполнитель для игрушек</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Прочие товары для творчества</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Полимерная глина</li>
+                <li class="c-card-descr__item">Термоклей и термопистолеты</li>
+                <li class="c-card-descr__item">Термоапликатор для траз</li>
+                <li class="c-card-descr__item">Часовые механизмы</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+        <li class="c-goods-card__item">
+          <div class="c-goods-card__card">
+            <div class="c-goods-card__title">
+              <h3>Швейная фурнитура</h3>
+            </div>
+            <div class="c-goods-card__descr">
+              <ul class="c-card-descr__list">
+                <li class="c-card-descr__item">Молнии, бегунки</li>
+                <li class="c-card-descr__item">Нитки, иглы</li>
+                <li class="c-card-descr__item">Ленты клеевые, велкро</li>
+                <li class="c-card-descr__item">Резинка бельевая, шляпная</li>
+                <li class="c-card-descr__item">Пуговицы</li>
+              </ul>
+            </div>
+            <button class="c-goods-card__button">Узнать о наличии</button>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <footer></footer>

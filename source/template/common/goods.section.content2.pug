@@ -1,0 +1,12 @@
+.l-goods__wrapper
+  ul.c-goods-card__list
+    each item in locals
+      li.c-goods-card__item
+        .c-goods-card__card
+          .c-goods-card__title
+            h3=item.category
+          .c-goods-card__descr
+            ul.c-card-descr__list
+              each cat in item.items
+                li.c-card-descr__item=cat
+          button.c-goods-card__button Узнать о наличии

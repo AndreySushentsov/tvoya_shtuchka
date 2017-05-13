@@ -1,0 +1,66 @@
+.l-goods__wrapper{
+  width: 100%;
+}
+.c-goods-card__list{
+  width: 100%;
+}
+.c-goods-card__item{
+  width: 30%;
+  height: 650px;
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  @include laptop{
+    width: 48%;
+  };
+  @include tablet{
+    width: 100%;
+  };
+}
+.c-goods-card__card{
+  @include centred;
+  border: 2px solid #A03333;
+  width: 90%;
+  height: 90%;
+  background: #fff;
+}
+.c-goods-card__title{
+  text-align: center;
+  padding: 10px;
+  background: $main_color;
+  height: 60px;
+  position: relative;
+}
+.c-goods-card__title h3{
+  @include centred;
+  width: 80%;
+}
+.c-card-descr__list{
+  width: 90%;
+  color: $color_text2;
+  font-size: 0.95rem;
+  margin-top: 7%;
+  margin-left: 3%;
+}
+.c-card-descr__item{
+  margin: 10px 0;
+  font-style: italic;
+}
+.c-goods-card__button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  margin: 5%;
+  padding: 2%;
+  background: $main_color;
+  color: $color_text;
+  border: none;
+  outline: 0;
+  transition: 0.3s;
+  &:hover{
+    font-size: 1.35rem;
+    border-radius: 3px;
+    box-shadow: -8px -2px 5px $color_text2;
+  }
+}

@@ -12,7 +12,7 @@ $('.nav__burger').click(function () {
   $(this).toggleClass('change');
   $('.overlay-nav__container').toggleClass('show');
 })
-$('.c-sidebar__menu').click(function () {
+$('.nav__menu').click(function () {
   $(this).toggleClass('change');
   $('.overlay-nav__container').toggleClass('show');
 })
