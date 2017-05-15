@@ -1,13 +1,16 @@
-- var links = [{href: 'https://ok.ru/tvoya.shtuchka', link:'Наша группа в ОК'},{href: 'https://vk.com/tvoya_shtuchka_nt', link:'Наша группа в VK'}]
+- var links = [{href: 'https://ok.ru/tvoya.shtuchka', link:'Наша группа в "Одноклассники": ', icon:'fa fa-odnoklassniki'},{href: 'https://vk.com/tvoya_shtuchka_nt', link:'Наша группа в "В Контакте": ', icon:'fa fa-vk'}]
 .c-content__container
   .c-content__contacts
-    h3.c-content__title Со всеми предложениями и вопросами можно обращаться по телефону, в наших группах в социальных сетях или написав нам на почту через форму обратной связи ниже:
+    p.c-content__title Со всеми предложениями и вопросами можно обращаться по телефону, в наших группах в социальных сетях или написав нам на почту через форму обратной связи ниже:
+    br/
     p.c-content__adress Наш адрес: ГГМ, ул.Захарова 1а
     p.c-content__phone тел. 89022709692
     ul.c-content__list
       each link in links
         li.c-content__item
-          a(href=`${link.href}` target="_blank").c-contact__link=link.link
+          span=link.link
+          a(href=`${link.href}` target="_blank").c-contact__link
+            i(class=`${link.icon}` aria-hidden="true")
     form.c-form
         .c-form__row
           .c-form__field
@@ -19,6 +22,6 @@
         .c-form__row
           .c-form__textarea
             textarea(id="message" required).c-form__input
-            label(for="message").c-form__label Ваше сообение
+            label(for="message").c-form__label Ваше сообщение
         .c-form__field.c-form__field_submit 
           input(type="submit" value="Отправить")
