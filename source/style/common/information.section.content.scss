@@ -1,8 +1,17 @@
 .c-content__information{
   margin: 20px 0;
+  width: 90%;
+  background: #fff;
+  height: 90%;
+  padding: 40px;
+  color: $color_text2;
+  @include laptop{
+    padding: 20px;
+  };
 }
 .information__block{
   margin-bottom: 20px;
+
 }
 .information__title{
   margin-bottom: 10px;
