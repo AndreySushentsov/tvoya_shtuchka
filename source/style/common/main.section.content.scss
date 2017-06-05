@@ -32,6 +32,11 @@
   @include laptop{
     margin: 0 auto;
   };
+  @include mobile{
+    width: 70%;
+    height: auto;
+    min-height: 100px;
+  };
 }
 .c-content__block-img-wrapper-inner{
   @include centred();

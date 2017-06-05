@@ -7,6 +7,10 @@
 .c-header__image{
   @include centred;
   height: 100%;
+  @include mobile{
+    width: 95%;
+    height: auto;
+  };
 }
 .nav__menu{
   position: absolute;
